@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boolean Algebra</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!--Navbar-->
+    <div id="nav-bar">
+        <div>
+            <ul id="nav-links">
+                <li><a class="active" href=""><h1>What Is Algibra</h1></a></li>
+                <li><a href="#types"><h1>Logic Gates</h1></a></li>
+                <li><a href="#rules"><h1>Laws</h1></a></li>
+                <li><a href="#form-details"><h1>Contact Us</h1></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+
+        <div id="mobile">
+            <i id="bar" class="fa fa-outdent"></i>
+        </div>
+    </div>
+
+    <!--Section For Introduction-->
+    <section id="hero" class="hidden">
+        <div class="hero-text">
+            <div class="hero-topic">
+                <h1>What is Boolean <span>Algebra</span>  ?</h1>
+            </div>
+
+            <div class="hero-answer">
+                <p>
+                    Boolean algebra is a division of mathematics that deals with 
+                    operations on logical values and incorporates binary variables. 
+                    Boolean algebra traces its origins to an 1854 book by mathematician 
+                    George Boole.
+                </p>
+
+                <p>
+                    The distinguishing factor of Boolean algebra is that it deals only 
+                    with the study of binary variables. Most commonly Boolean variables 
+                    are presented with the possible values of 1 ("true") or 0 ("false").
+                     Variables can also have more complex interpretations, such as in set 
+                     theory. Boolean algebra is also known as binary algebra.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--Section For Logic Gates-->
+    <section id="types">
+        <div class="types-topic hidden">
+            <h1>Boolean <span>Algebra</span> Logic Gates</h1>
+        </div>
+
+        <div class="boxes right">
+            <div class="image-box">
+                <img src="./images/NOT.jpg" alt="">
+                <h1>NOT</h1>
+                <p>The NOT gate is a single input single output gate. 
+                    This gate is also known as Inverter because it performs the 
+                    inversion of the applied binary signal, i.e., it converts 0 into 1 
+                    or 1 into 0.
+                </p>
+            </div>
+
+            <div class="image-box">
+                <img src="./images/AND.jpg" alt="">
+                <h1>AND</h1>
+                <p>AND gate also has two or more input signals same as that of the 
+                    OR gate, and the output is single. The gate has a high output only 
+                    when all the input signals are high otherwise the output signal is low.
+                </p>
+            </div>
+
+            <div class="image-box">
+                <img src="./images/ORjpg.jpg" alt="">
+                <h1>OR</h1>
+                <p>An OR gate has two or more than two inputs and one output signal. 
+                    It is called an OR gate because the output signal will be high only 
+                    if any or all input signals are high.
+                </p>
+            </div>
+
+            <div class="image-box">
+                <img src="./images/EXNOR.jpg" alt="">
+                <h1>EXNOR</h1>
+                <p>EXNOR gate means exclusive NOR gate and is a combination of X-OR and NOT gate. 
+                    It also has two inputs and one output. When both the inputs are at 0, the output 
+                    of the  EXNOR gate will be high i.e.1.
+                </p>
+            </div>
+
+            <div class="image-box">
+                <img src="./images/EXOR.png" alt="">
+                <h1>EXOR</h1>
+                <p>The EXOR gate is used extensively in digital data processing circuits and is 
+                    known as Exclusive-OR-gate. The EXOR gate has a high output only when an odd 
+                    number of inputs are high.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--Section For Laws Topic-->
+    <section id="rules" class="hidden">
+        <div class="rules-topic">
+            <h1>Boolean <span>Algebra</span> Laws</h1>
+        </div>
+    </section>
+
+    <!--Law 01-->
+    <section id="rule-01" class="hidden">
+        <div class="left-side">
+            <p>
+                In the Boolean Algebra, we have identity elements for both 
+                AND(.) and OR(+) operations. The identity law state that in 
+                boolean algebra we have such variables that on operating 
+                with AND and OR operation we get the same result, i.e.<br><br>
+            </p>
+
+            <p>
+                A + 0 = A<br>
+                A.1 = A
+            </p>
+        </div>
+
+        <div class="right-side">
+            <h1>Identity Law</h1>
+        </div>
+    </section>
+
+    <!--Law 02-->
+    <section id="rule-02" class="right">
+        <div class="left-side">
+            <h1>Commutative Law</h1>
+        </div>
+
+        <div class="right-side">
+            <p>
+                Binary variables in Boolean Algebra follow the commutative law.
+                 This law states that operating boolean variables A and B is 
+                 similar to operating boolean variables B and A. That is,<br><br>
+            </p>
+
+            <p>
+                A. B = B. A<br>
+                A + B = B + A
+            </p>
+        </div>
+    </section>
+
+    <!--Law 03-->
+    <section id="rule-01" class="hidden">
+        <div class="left-side">
+            <p>
+                The associative law states that when OR'ing more than two variables, 
+                the result is the same regardless of the grouping of those variables.
+                Similarly, the communicative law states that the order in which two 
+                variables are OR'ed makes no difference to the outcome.<br><br>
+            </p>
+
+            <p>
+                ( A . B ) . C = A . ( B . C )<br>
+                ( A + B ) + C = A + ( B + C)
+            </p>
+        </div>
+
+        <div class="right-side">
+            <h1>Associative Law</h1>
+        </div>
+    </section>
+
+    <!--Law 04-->
+    <section id="rule-02" class="right">
+        <div class="left-side">
+            <h1>Distributive Law</h1>
+        </div>
+
+        <div class="right-side">
+            <p>
+                Distributive Law states that the multiplication of two variables and 
+                adding the result with a variable will result in the same value as 
+                multiplication of addition of the variable with individual variables. 
+                For example:<br><br>
+            </p>
+
+            <p>
+                A . ( B + C) = (A . B) + (A . C)
+            </p>
+        </div>
+    </section>
+
+    <!--Law 05-->
+    <section id="rule-01" class="hidden">
+        <div class="left-side">
+            <p>
+                This law uses the NOT operation.In Boolean algebra, the inversion law states that 
+                double inversion of a variable results in the original variable itself.<br><br>
+            </p>
+
+            <p>
+                (A’)’ = A
+            </p>
+        </div>
+
+        <div class="right-side">
+            <h1>Inversion Law</h1>
+        </div>
+    </section>
+
+    <!--Law 06-->
+    <section id="rule-02" class="right">
+        <div class="left-side">
+            <h1>De Morgan’s Law</h1>
+        </div>
+
+        <div class="right-side">
+            <p>
+                There are two basic theorems of great importance in Boolean Algebra,
+                 which are De Morgan’s First Laws, and De Morgan’s Second Laws. These 
+                 are also called De Morgan’s Theorems. Now let’s learn about both in 
+                 detail.<br><br>
+            </p>
+        </div>
+    </section>
+
+    <!--Morgan Law-->
+    <section id="morgan">
+        <h1>De Morgan’s Laws</h1>
+
+        <div class="main">
+            <div class="first hidden">
+                <h2>De Morgan’s First laws</h2>
+
+                <p>
+                    The complement of the product (AND) of two Boolean variables 
+                    (or expressions) is equal to the sum(OR) of the complement of each 
+                    Boolean variable (or expression).<br>
+                    Example - (P.Q)’ = (P)’ + (Q)’
+                </p>
+            </div>
+
+            <div class="second right">
+                <h2>De Morgan’s Second laws</h2>
+
+                <p>
+                    The Complement of the sum (OR) of two Boolean variables 
+                    (or expressions) is equal to the product(AND) of the complement of 
+                    each Boolean variable (or expression).<br>
+                    Example - (P + Q)’ = (P)’.(Q)’
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact Form-->
+    <section id="form-details">
+        <form action="#">
+            <span>LEAVE A MESSAGE</span>
+            <h2>We <span>love</span> to hear from you</h2>
+
+            <label for="name">From:</label>
+            <input type="text" name="fromEmail" id="fromEmail" class="form-control" placeholder="Your Email Address" required autofocus>
+
+            <label for="email">To:</label>
+            <input type="text" name="toEmail" id="toEmail" class="form-control" placeholder="Email address" required autofocus>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject" required>
+
+            <label for="message">Message</label>
+            <textarea  id="message" name="message" class="form-control" placeholder="Message" required ></textarea>
+
+            <button class="normal" name="sendMailBtn" type="submit" value="Send">Send Message</button>
+           
+        </form>
+
+        <div class="people">
+            <div>
+                <img src="images/people/1.png" alt="">
+                <p><span>John Doe</span> Senior Marketing Manager <br>Phone: (+94)71-5862987 <br>
+                E-mail: Johndoe@gmail.com</p>
+            </div>
+
+            <div>
+                <img src="images/people/2.png" alt="">
+                <p><span>William Smith</span> HR Manager <br>Phone: (+94)71-7858963 <br>
+                E-mail: williamsmith@gmail.com</p>
+            </div>
+
+            <div>
+                <img src="images/people/3.png" alt="">
+                <p><span>Emma Stone</span> Senior Supervisor <br>Phone: (+94)71-5862987 <br>
+                E-mail: Johndoe@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="section-p1">
+        <div class="col">
+            
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> 268/9, 5th mile post, Kandy, Sri Lanka</p>
+            <p><strong>Phone:</strong> (+94)715869875 / (+94)778459635</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="about.php">About us</a>
+            <a href="cart.php">Company Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="contact.php">Contact us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="">Learn More</a>
+            <a href="#">More Topics</a>
+            <a href="#">Find Articles</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="images/Icons/app.jpg" alt="">
+                <img src="images/Icons/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="images/Icons/pay.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>© 2023 May 08, Boolean Algebra - Official Website</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
