@@ -555,7 +555,341 @@ footer{
 
 
 /*================================Mobile Resposive===========================*/
-@media screen and (max-width: 667px) {
+@media screen and (max-width: 1400px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .main h2{
+        font-size: 28px;
+    }
+
+    .first{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+        background-color: rgb(0, 0, 0);
+        height: 60vh;
+        width: 40vw;
+        border-radius: 50px;
+        overflow: hidden;
+    }
+    
+    .second{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+        background-color: rgb(0, 0, 0);
+        height: 60vh;
+        width: 40vw;
+        border-radius: 50px;
+        overflow: hidden;
+    }
+
+    #rule-02 .left-side h1{
+        font-size: 32px;
+    }
+
+    #rule-01 .right-side h1{
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    body{
+        overflow-x: hidden;
+    }
+        #nav-links {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            position: fixed;
+            top: 0;
+            right: -300px;
+            height: 100vh;
+            width: 300px;
+            background-color: #E3E6F3;
+            box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+            padding: 80px 0 0 10px;
+            transition: 0.3s;
+        }
+        
+        #nav-links.active{
+            right: 0px;
+        }
+        
+        #nav-links li{
+            margin-bottom: 1px;
+        }
+        
+        #mobile{
+            display: flex;
+            align-items: center;
+        }
+        
+        #mobile i{
+            color: #1a1a1a;
+            font-size: 42px;
+            padding-left: 800px;
+        }
+        
+        #close{
+            display: initial;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            color: #000;
+            font-size: 24px;
+            width: 25px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+        }
+        /*========================================Hero section*/
+        #hero{
+            background-image: none;
+            height: fit-content;
+            padding: 80px 18px 0 52px;
+        }
+
+        #hero .hero-text{
+            margin-left: 0px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-topic h1{
+            font-size: 40px;
+        }
+
+        .hero-answer p{
+            font-size: 24px;
+            line-height: 50px;
+            margin-top: 55px;
+        }
+
+        /*=================================================Type*/
+        #types{
+            margin-top: 8vh;
+            height: fit-content;
+        }
+
+        .types-topic h1{
+            font-size: 40px;
+        }
+
+        .boxes{
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 7vh;
+            gap: 65px;
+        }
+
+        .image-box{
+            width: 55vw;
+            height: 70vh;
+        }
+
+        .image-box img{
+            width: 50vw;
+            height: 28vh;
+            margin-top: 18px;
+        }
+
+        .image-box h1{
+            margin-top: 4px;
+            font-size: 32px;
+        }
+
+        .image-box p{
+            font-size: 18px;
+            width: 45vw;
+            line-height: 30px;
+        }
+
+        .hidden{
+            transform: translateX(0);
+        }
+
+        .right{
+            transform: translateX(0);
+        }
+
+
+        /*======================================================Rules*/
+        #rules{
+            height: 20vh;
+        }
+
+        .rules-topic h1{
+            font-size: 40px;
+            margin-top: 10vh;
+        }
+
+        /*======================================================Low 01*/
+        #rule-01{
+            flex-direction: column-reverse;
+            height: 90vh;
+        }
+
+        #rule-01 .left-side{
+            border: none;
+            border-radius: 0;
+            flex: 2;
+        }
+
+        #rule-01 .left-side p{
+            font-size: 20px;
+            line-height: 45px;
+        }
+
+        #rule-01 .right-side h1{
+            font-size: 40px;
+        }
+
+        /*======================================================Law 02*/
+        #rule-02{
+            flex-direction: column;
+            height: 90vh;
+        }
+
+        #rule-02 .left-side h1{
+            font-size: 40px;
+        }
+
+        #rule-02 .right-side{
+            border: none;
+            border-radius: 0;
+            flex: 2;
+        }
+
+        #rule-02 .right-side p{
+            font-size: 20px;
+            line-height: 45px;
+        }
+
+        /*=========================================================Morgan*/
+        #morgan{
+            height: 120vh;
+        }
+
+        #morgan h1{
+            font-size: 40px;
+        }
+
+        #morgan .main{
+            flex-direction: column;
+            margin-top: 5vh;
+        }
+
+        .main h2{
+            font-size: 30px;
+            margin-top: 1.5vh;
+        }
+
+        .main p{
+            font-size: 20px;
+            line-height: 30px;
+            width: 72vw;
+            margin-top: 1vh;
+        }
+
+        .first{
+            height: 10vh;
+            width: 80vw;
+            border-radius: 50px;
+        }
+
+        .second{
+            height: 40vh;
+            width: 80vw;
+            border-radius: 50px;
+        }
+
+        /*===============================================Form*/
+        #form-details{
+            flex-direction: column;
+            width: 100%;
+            padding: 20px;
+            margin: 10px;
+            gap: 45px;
+            align-items: center;
+        }
+
+        #form-details form{
+            align-items: center;
+        }
+
+        #form-details form span{
+            margin-bottom: 25px;
+            margin-top: 35px;
+            font-size: 28px;
+        }
+
+        #form-details form h2{
+            font-size: 40px;
+            line-height: 45px;
+            margin-bottom: 5vh;
+        }
+
+        #form-details form h2 span{
+            font-size: 40px;
+        }
+
+        #form-details .people div{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #form-details .people div img{
+            margin-right: 0;
+            margin-bottom: 20px;
+            width: 60px;
+            height: 60px;
+        }
+
+        #form-details .people div p{
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            line-height: 45px;
+        }
+
+        #form-details .people div span{
+            align-items: center;
+            font-size: 28px;
+        }
+
+        /*=============================================Footer*/
+        footer{
+            align-items: center;
+        }
+
+        footer .col{
+            margin-top: 4vh;
+        }
+
+        footer h4{
+            font-size: 24px;
+        }
+
+        footer p{
+            font-size: 18px;
+        }
+
+        footer a{
+            font-size: 18px;
+        }
+}
+
+
+@media screen and (max-width: 600px) {
+    body{
+        overflow-x: hidden;
+    }
         #nav-links {
             display: flex;
             flex-direction: column;
@@ -589,7 +923,6 @@ footer{
             color: #1a1a1a;
             font-size: 24px;
             padding-left: 260px;
-
         }
         
         #close{
@@ -725,6 +1058,10 @@ footer{
         }
 
         /*=========================================================Morgan*/
+        #morgan{
+            height: 90vh;
+        }
+
         #morgan h1{
             font-size: 20px;
         }
@@ -799,10 +1136,13 @@ footer{
         #form-details .people div p{
             align-items: center;
             justify-content: center;
+            font-size: 15px;
+            line-height: 25px;
         }
 
         #form-details .people div span{
             align-items: center;
+            font-size: 20px;
         }
 
         /*=============================================Footer*/
@@ -810,4 +1150,21 @@ footer{
             flex-direction: column;
             align-items: center;
         }
+
+        .col h4{
+            font-size: 20px;
+        }
+
+        .col p{
+            font-size: 12px;
+        }
+
+        .col a{
+            font-size: 12px;
+        }
+
+        .copyright p{
+            font-size: 12px;
+        }
 }
+
